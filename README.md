@@ -55,42 +55,42 @@
 
 ## Полезные команды
 
-Получить список публичных образов 
-```bash
-yc compute image list --folder-id standard-images
-```
+- Получить список публичных образов 
+    ```bash
+    yc compute image list --folder-id standard-images
+    ```
 
-Получить image_id для семейства 'ubuntu-2204-lts'
-```bash
-yc compute image list --folder-id standard-images | grep 'ubuntu-2204-lts'
-```
+- Получить image_id для семейства 'ubuntu-2204-lts'
+    ```bash
+    yc compute image list --folder-id standard-images | grep 'ubuntu-2204-lts'
+    ```
 
-Список виртуальных машин (экземпляров)
-```bash
-yc compute instance list
-```
+- Список виртуальных машин (экземпляров)
+    ```bash
+    yc compute instance list
+    ```
 
-Список сетей
-```bash
-yc vpc network list
-```
+- Список сетей
+    ```bash
+    yc vpc network list
+    ```
 
-Список подсетей
-```bash
-yc vpc subnet list
-```
+- Список подсетей
+    ```bash
+    yc vpc subnet list
+    ```
 
-Доступные зоны
-```bash
-yc compute zone list
-```
+- Доступные зоны
+    ```bash
+    yc compute zone list
+    ```
 
-Cloud id 
-```bash
-yc config get cloud-id
-```
+- Cloud id 
+    ```bash
+    yc config get cloud-id
+    ```
 
-Folder id 
-```bash
-yc config get folder-id
-```
+- Folder id 
+    ```bash
+    yc config get folder-id
+    ```
