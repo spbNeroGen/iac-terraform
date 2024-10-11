@@ -12,8 +12,6 @@
 runcmd:
   - apt-get update
   - apt-get install -y nginx
-  - systemctl start nginx
-  - systemctl enable nginx
 
 # Автоматический запуск nginx
   - systemctl start nginx

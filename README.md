@@ -8,6 +8,7 @@
 - **[01-bucket-sa](./01-bucket-sa/)** - создает **Service Account** и **бакет Object Storage**
 - **[02-simple-vm](./02-simple-vm/)** - создает виртуальную машину в **default сети** с **2CPU**, **4Gb** оперативной памяти
 - **[03-simple-vm-cloud-init](./03-simple-vm-cloud-init/)** - создает виртуальную машину с использованием **cloud-init** для автоматической настройки системы.
+- **[04-group-vm-with-lb](./04-group-vm-with-lb)** - создает группу виртуальных машин, целевую группу **[NLB](https://yandex.cloud/ru/docs/network-load-balancer/operations/target-group-create)** и **Load Balancer**.
 
 ## Используемый стек
 - **Terraform** — инструмент для управления инфраструктурой как кодом.
