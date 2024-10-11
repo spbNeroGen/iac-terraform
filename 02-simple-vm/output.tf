@@ -10,7 +10,7 @@ output "vm_name" {
 
 output "vm_ssh_access" {
   description = "SSH command to access the VM"
-  value       = "ssh nerogen@${yandex_compute_instance.simple-vm.network_interface[0].nat_ip_address}"
+  value       = "ssh ubuntu@${yandex_compute_instance.simple-vm.network_interface[0].nat_ip_address}"
 }
 
 output "vm_id" {

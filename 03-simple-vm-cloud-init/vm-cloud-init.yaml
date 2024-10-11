@@ -1,0 +1,31 @@
+#cloud-config
+# Создаем пользователя с правами sudo и добавляем SSH ключи
+# users:
+#   - name: devops
+#     groups: sudo
+#     shell: /bin/bash
+#     sudo: ['ALL=(ALL) NOPASSWD:ALL']
+#     ssh-authorized-keys:
+#       - ssh-rsa AAAAB3Nza.....your-public-key... user@example.com
+
+# Обновляем пакеты и устанавливаем необходимые программы
+runcmd:
+  - apt-get update
+  - apt-get install -y nginx
+  - systemctl start nginx
+  - systemctl enable nginx
+
+# Автоматический запуск nginx
+  - systemctl start nginx
+  - systemctl enable nginx
+
+# Создаем тестовый HTML-файл для nginx
+write_files:
+  - path: /var/www/html/index.html
+    content: |
+      <html>
+      <head><title>Welcome to Your Cloud Server</title></head>
+      <body>
+      <h1>Success! Your cloud-init setup works!</h1>
+      </body>
+      </html>
