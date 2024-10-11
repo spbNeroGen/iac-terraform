@@ -1,3 +1,5 @@
+# https://yandex.cloud/ru/docs/network-load-balancer/tf-ref
+# https://yandex.cloud/ru/docs/network-load-balancer/concepts/?from=int-console-help-center-or-nav
 resource "yandex_lb_target_group" "vms-group" {
   name      = "vms-group"
 
