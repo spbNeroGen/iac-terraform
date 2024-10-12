@@ -11,6 +11,7 @@
 - **[04-group-vm-with-lb](./04-group-vm-with-lb)** - создает группу виртуальных машин, целевую группу **[NLB](https://yandex.cloud/ru/docs/network-load-balancer/operations/target-group-create)** и **Load Balancer**.
 - **[05-public-private-subnets-with-nat](./05-public-private-subnets-with-nat)** - создает инфраструктуру с публичной и приватной подсетями, используется **NAT инстанс**.
 - **[06-mysql-cluster-management](./06-mysql-cluster-management/)** - создает `MySQL кластер`, в зависимости от переменной `ha_enabled`  (high availability), создается кластер с одним или двумя хостами.
+- **[07-count-for-each-dynamic](./07-count-for-each-dynamic)** - демонстрирует использование циклов `count` и `for_each`, а также **динамических ресурсов** на примере `dynamic "secondary_disk"`, подготавливает `inventory.ini` для `Ansible`.
 
 ## Используемый стек
 - **Terraform** — инструмент для управления инфраструктурой как кодом.
