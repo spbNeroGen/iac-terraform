@@ -14,6 +14,7 @@
 - **[07-count-for-each-dynamic](./07-count-for-each-dynamic)** - демонстрирует использование циклов `count` и `for_each`, а также **динамических ресурсов** на примере `dynamic "secondary_disk"`, подготавливает `inventory.ini` для `Ansible`.
 - **[08-kubernetes-cluster](./08-kubernetes-cluster/)** - создает управляемый кластер `Kubernetes` с распределением мастер-узлов по разным зонам доступности, настройкой группы воркеров, использованием KMS для шифрования данных и интеграцией с IAM для управления ресурсами.
 - **[09-postgresql-cluster-management](./09-postgresql-cluster-management/)** - создает кластер management базы данных `PostgreSQL`.
+- **[10-dns-management](./10-dns-management/)** - позволяет управлять `DNS-записями`.
 
 ## Используемый стек
 - **Terraform** — инструмент для управления инфраструктурой как кодом.
@@ -101,3 +102,16 @@
     ```bash
     yc config get folder-id
     ```
+## Настройка провайдера .terraformrc
+Файл `.terraformrc` должен располагаться в корне домашней папки пользователя, например, `/home/user/` или `/User/user`
+```hcl
+provider_installation {
+  network_mirror {
+    url = "https://terraform-mirror.yandexcloud.net/"
+    include = ["registry.terraform.io/*/*"]
+  }
+  direct {
+    exclude = ["registry.terraform.io/*/*"]
+  }
+}
+```
