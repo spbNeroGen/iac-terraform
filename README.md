@@ -13,6 +13,7 @@
 - **[06-mysql-cluster-management](./06-mysql-cluster-management/)** - создает `MySQL кластер`, в зависимости от переменной `ha_enabled`  (high availability), создается кластер с одним или двумя хостами.
 - **[07-count-for-each-dynamic](./07-count-for-each-dynamic)** - демонстрирует использование циклов `count` и `for_each`, а также **динамических ресурсов** на примере `dynamic "secondary_disk"`, подготавливает `inventory.ini` для `Ansible`.
 - **[08-kubernetes-cluster](./08-kubernetes-cluster/)** - создает управляемый кластер `Kubernetes` с распределением мастер-узлов по разным зонам доступности, настройкой группы воркеров, использованием KMS для шифрования данных и интеграцией с IAM для управления ресурсами.
+- **[09-postgresql-cluster-management](./09-postgresql-cluster-management/)** - создает кластер management базы данных `PostgreSQL`.
 
 ## Используемый стек
 - **Terraform** — инструмент для управления инфраструктурой как кодом.
