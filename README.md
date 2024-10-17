@@ -15,6 +15,7 @@
 - **[08-kubernetes-cluster](./08-kubernetes-cluster/)** - создает управляемый кластер `Kubernetes` с распределением мастер-узлов по разным зонам доступности, настройкой группы воркеров, использованием KMS для шифрования данных и интеграцией с IAM для управления ресурсами.
 - **[09-postgresql-cluster-management](./09-postgresql-cluster-management/)** - создает кластер management базы данных `PostgreSQL`.
 - **[10-dns-management](./10-dns-management/)** - позволяет управлять `DNS-записями`.
+- **[11-mongodb-cluster-management](./11-mongodb-cluster-management/)** - создает кластер management базы данных `MongoDB`.
 
 ## Используемый стек
 - **Terraform** — инструмент для управления инфраструктурой как кодом.
